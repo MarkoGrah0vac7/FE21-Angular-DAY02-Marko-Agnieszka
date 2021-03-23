@@ -9,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   counter = 0;
+  companyName: string;
 
 
 
-  constructor() { }
+  constructor() { 
+    this.companyName = "Cars4sale";
+   }
 
 
 

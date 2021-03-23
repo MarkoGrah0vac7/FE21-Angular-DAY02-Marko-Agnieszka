@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormGroup, FormControl, Validators} from '@angular/forms'
+import {FormGroup, FormControl, Validators} from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -47,7 +47,7 @@ cars = [{
 
   onSubmit() {
     if (this.upToYou.valid) {
-      let a = this.cars.values;
+      let a = this.upToYou.value;
       this.cars.push(a);
     }
   }
