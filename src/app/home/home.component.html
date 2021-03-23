@@ -1,0 +1,26 @@
+  <div class="row row-cols-3">
+
+      <div *ngFor="let car of cars">
+        <div class="card col-4" style="width: 18rem;">
+          <img src="{{car.img}}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{car.type}}</h5>
+            <p class="card-text">{{car.price}}</p>
+            <a href="#" class="btn btn-primary">Rent</a>
+          </div>
+        </div>
+
+      </div>
+ 
+  <form [formGroup]="upToYou" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="type">
+    <br>
+    <input type="text" formControlName="price">
+    <br>
+    <input type="email" formControlName="img">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  
+

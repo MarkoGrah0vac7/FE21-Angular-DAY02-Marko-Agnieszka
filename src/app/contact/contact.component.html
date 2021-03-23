@@ -1,0 +1,13 @@
+<!-- <label for="demo">
+  Name :
+</label>
+  <input id="demo" type="text" [formControl]="name"> -->
+  <form [formGroup]="inputs" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="firstName">
+    <br>
+    <input type="text" formControlName="lastName">
+    <br>
+    <input type="email" formControlName="email">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
