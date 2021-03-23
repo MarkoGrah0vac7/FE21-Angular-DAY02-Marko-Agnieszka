@@ -22,10 +22,10 @@ export class NavbarComponent implements OnInit {
 
 count(){
   this.counter = this.counter + 10 ;
-  // if (this.counter >= 200) this.vip = true;  
+  // if (this.counter >= 200){ document.getElementbyId("x").innertext = "VIP"} this.vip = true;  
 }
 
-
+ 
 
 
   ngOnInit(): void {
@@ -33,41 +33,3 @@ count(){
 
 }
 
-
-
-// <div class="btn" [class.active]="counter > 200">
-//   <ng-template [ngIf]="counter > 200" [ngIfElse]="none">
-//           <p> VIP </p>
-//   </ng-template>
-//   <ng-template #none>
-//   </ng-template>
-// </div>
-
-
-
-
-// cars = [{
-//   type: Oldtimer,
-//   price: 85
-// },{
-//   type: Sport,
-//   price: 80
-// }, {
-//   type: Sport,
-//   price: 80
-// },{
-//   type: Sport,
-//   price: 80
-// }, {
-//   type: Sport,
-//   price: 80
-// }, {
-//   type: Sport,
-//   price: 80
-// }];
-
-
-// <div *ngFor="let car of cars">
-//   <p>{{car.type}}</p>
-//   <p>{{car.price}}</p>
-// </div>
